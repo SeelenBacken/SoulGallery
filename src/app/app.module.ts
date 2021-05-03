@@ -8,11 +8,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {NgxElectronModule} from 'ngx-electron';
+import { GalleryViewComponent } from './gallery-view/gallery-view.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    GalleryViewComponent
   ],
   imports: [
     BrowserModule,

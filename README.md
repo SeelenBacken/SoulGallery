@@ -1,4 +1,4 @@
-# PictureGallery
+# Soul Gallery
 
 Small software to store and organize pictures using Angular and Electron.
 
@@ -8,7 +8,7 @@ Small software to store and organize pictures using Angular and Electron.
 
 `npm run electron`: Start the application
 
-##Angular Generated Readme:
+## Angular Generated Readme:
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.11.
 
