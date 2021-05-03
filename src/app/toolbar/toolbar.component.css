@@ -1,0 +1,16 @@
+.toolbar {
+  height: 3vh;
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.toolbar button {
+  -webkit-app-region: no-drag;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
