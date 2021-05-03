@@ -4,7 +4,7 @@ Small software to store and organize pictures using Angular and Electron.
 
 **Currently there are no functions for this! Not working yet!**
 
-## Commands
+### Commands
 
 `npm run electron`: Start the application
 
