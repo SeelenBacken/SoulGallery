@@ -1,5 +1,7 @@
 # Soul Gallery
 
+[![Mocha/Chai Test Run](https://github.com/SeelenBacken/SoulGallery/actions/workflows/node.js.yml/badge.svg)](https://github.com/SeelenBacken/SoulGallery/actions/workflows/node.js.yml)
+
 Small software to store and organize pictures using Angular and Electron.
 
 **Currently there are no functions for this! Not working yet!**
