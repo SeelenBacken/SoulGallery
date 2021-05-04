@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fab0d4a-db41-4104-ba44-dc8115f12079" name="Default Changelist" comment="">
+    <list default="true" id="7fab0d4a-db41-4104-ba44-dc8115f12079" name="Default Changelist" comment="Included Workspace (So IntelliJ run configurations are saved)">
+      <change afterPath="$PROJECT_DIR$/electron/db/NeDB.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/electron/db/NeDB.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/electron/db/test.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/electron/db/tingo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/electron/db/tingo.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/gallery-view/gallery-view.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/gallery-view/gallery-view.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/gallery-view/gallery-view.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/gallery-view/gallery-view.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +38,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\z0041x2t\IdeaProjects\SoulGallery\node_modules\typescript\lib" />
   </component>
-  <component name="RunManager" selected="Mocha.Run All Tests">
+  <component name="RunManager" selected="npm.coverage">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -71,6 +84,78 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="coverage" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="Database Tests (1)" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/electron/db/NeDB.test.ts</test-file>
+      <test-names>
+        <name value="Database Tests" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Database Tests (2)" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/electron/db/NeDB.test.js</test-file>
+      <test-names>
+        <name value="Database Tests" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Database Tests.Should Init Database" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/electron/db/NeDB.test.ts</test-file>
+      <test-names>
+        <name value="Database Tests" />
+        <name value="Should Init Database" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Database Tests.Should Save an Image" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/electron/db/NeDB.test.ts</test-file>
+      <test-names>
+        <name value="Database Tests" />
+        <name value="Should Save an Image" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Run All Tests" type="mocha-javascript-test-runner">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -86,10 +171,24 @@
     <list>
       <item itemvalue="JavaScript Debug.Angular Application" />
       <item itemvalue="Mocha.Run All Tests" />
+      <item itemvalue="Mocha.Database Tests (1)" />
+      <item itemvalue="Mocha.Database Tests.Should Init Database" />
+      <item itemvalue="Mocha.Database Tests (2)" />
+      <item itemvalue="Mocha.Database Tests.Should Save an Image" />
       <item itemvalue="npm.Start Application" />
       <item itemvalue="npm.Angular CLI Server" />
+      <item itemvalue="npm.coverage" />
       <item itemvalue="Protractor.E2E Tests (PictureGallery)" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.coverage" />
+        <item itemvalue="Mocha.Database Tests.Should Save an Image" />
+        <item itemvalue="Mocha.Database Tests (1)" />
+        <item itemvalue="Mocha.Database Tests (2)" />
+        <item itemvalue="Mocha.Database Tests.Should Init Database" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -99,11 +198,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1620114067671</updated>
-      <workItem from="1620114070085" duration="228000" />
+      <workItem from="1620114070085" duration="10409000" />
     </task>
+    <task id="LOCAL-00001" summary="Included Workspace (So IntelliJ run configurations are saved)">
+      <created>1620114548121</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620114548121</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.db" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Included Workspace (So IntelliJ run configurations are saved)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Included Workspace (So IntelliJ run configurations are saved)" />
   </component>
 </project>

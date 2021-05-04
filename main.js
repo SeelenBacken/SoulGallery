@@ -2,8 +2,10 @@ const electron = require('electron')
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
 const log = require('loglevel')
+const {NeDB} = require('./electron/db/NeDB');
 
 const ipcMain = electron.ipcMain;
+let imageDB = new NeDB();
 
 const path = require('path')
 const url = require('url')
@@ -45,4 +47,10 @@ app.on('activate', () => {
 ipcMain.on('shutdown', () => {
   log.trace('Shutting Down...');
   app.quit();
+})
+
+ipcMain.on('loadImgs', (event) => {
+  imageDB.getAllPictures((images) => {
+    event.sender.send('images', images);
+  })
 })
