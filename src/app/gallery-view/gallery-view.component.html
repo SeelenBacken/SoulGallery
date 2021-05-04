@@ -1,3 +1,5 @@
-<div *ngFor="let image of images">
-  <img height="50px" width="50px" src="{{image}}">
-</div>
+<app-gallery-toolbar></app-gallery-toolbar>
+<mat-card class="albumCard" *ngFor="let album of albums">
+  {{album.title}}
+  <img mat-card-image alt="Picture not found" src="data:image/png;base64,{{album.image.content}}">
+</mat-card>

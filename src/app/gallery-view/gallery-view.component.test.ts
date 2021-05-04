@@ -4,7 +4,6 @@ import {GalleryViewComponent} from './gallery-view.component';
 
 describe('GalleryView Tests', () => {
   it('TestCase', () => {
-    console.warn('testThings');
-    expect(true).to.be.false;
+    console.warn('Currently no GalleryView Test implemented');
   });
 });

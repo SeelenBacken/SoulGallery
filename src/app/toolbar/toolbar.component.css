@@ -1,5 +1,5 @@
-.toolbar {
-  height: 3vh;
+mat-toolbar {
+  max-height: 8vh;
   -webkit-user-select: none;
   -webkit-app-region: drag;
   position: sticky;
@@ -7,7 +7,7 @@
   z-index: 1000;
 }
 
-.toolbar button {
+mat-toolbar button {
   -webkit-app-region: no-drag;
 }
 
