@@ -8,7 +8,6 @@ describe('Database Tests', async () => {
     const db = new NeDB(true);
     await db.find((item) => {
       expect(item).to.be.an('object');
-      console.log(item);
     });
   });
 
@@ -16,8 +15,9 @@ describe('Database Tests', async () => {
     const picString = fs.readFileSync(__dirname + '/test.png').toString('base64');
     const db = new NeDB(true);
     db.savePicture(picString, (id) => {
-      db.getPicture(id, (newString) => {
-        expect(newString.slice(-1)).to.equal('=');
+      db.getPicture(id, (imageContent) => {
+        expect(imageContent).to.be.an('string');
+        expect(imageContent.slice(-1)).to.equal('=');
       });
     });
   });

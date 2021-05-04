@@ -7,7 +7,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "mocha -r ts-node/register **/*.test.ts",
-    "coverage": "nyc --reporter=html npm run test",
+    "coverage": "nyc --reporter=lcov npm run test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "electron": "ng build --base-href ./ && electron ."
