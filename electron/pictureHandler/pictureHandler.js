@@ -1,5 +1,11 @@
+var fs = require('fs');
+
 function savePicture(image, dirPath) {
-  throw new PictureHandlerError('savePicture not implemented yet')
+  try {
+
+  } catch (e) {
+    throw new PictureHandlerError('Error Saving Picture')
+  }
 }
 
 function createDirectory(title, dirPath) {
@@ -11,9 +17,10 @@ function delPicture(image, dirPath) {
 }
 
 class PictureHandlerError extends Error {
-  constructor(message = 'generic PictureHandler Error') {
+  constructor(message = 'generic PictureHandler Error', rootError = 'none') {
     super(message);
     this.name = "PictureHandlerError";
+    this.error = rootError;
 
     if (Error.captureStackTrace) {
       Error.captureStackTrace(this, PictureHandlerError);
