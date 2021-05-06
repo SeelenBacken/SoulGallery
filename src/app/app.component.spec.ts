@@ -1,9 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {describe} from 'mocha';
+import {expect} from 'chai';
 
 describe('AppComponent', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
+  beforeEach(() => {
+    TestBed.configureTestingModule({
       declarations: [
         AppComponent
       ],
@@ -13,19 +15,19 @@ describe('AppComponent', () => {
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(app).to.be.equal(true);
   });
 
   it(`should have as title 'PictureGallery'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('PictureGallery');
+    expect(app.title).to.be.equal('PictureGallery');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('PictureGallery app is running!');
+    expect(compiled.querySelector('.content span').textContent).to.contain('PictureGallery app is running!');
   });
 });

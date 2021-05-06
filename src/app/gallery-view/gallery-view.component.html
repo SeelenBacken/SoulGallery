@@ -1,5 +1,5 @@
-<app-gallery-toolbar></app-gallery-toolbar>
+<app-gallery-toolbar (openAlbumDialog)="openDirectoryDialog()"></app-gallery-toolbar>
 <mat-card class="albumCard" *ngFor="let album of albums">
-  {{album.title}}
+  <mat-card-title>{{album.title}}</mat-card-title>
   <img mat-card-image alt="Picture not found" src="data:image/png;base64,{{album.image.content}}">
 </mat-card>

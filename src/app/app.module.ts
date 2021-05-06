@@ -8,16 +8,21 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {NgxElectronModule} from 'ngx-electron';
-import { GalleryViewComponent } from './gallery-view/gallery-view.component';
+import {GalleryViewComponent, GalleryViewDirectoryDialog} from './gallery-view/gallery-view.component';
 import {MatCardModule} from '@angular/material/card';
 import { GalleryToolbarComponent } from './gallery-view/gallery-toolbar/gallery-toolbar.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {FormsModule} from '@angular/forms';
+import {MatFormField, MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     GalleryViewComponent,
-    GalleryToolbarComponent
+    GalleryToolbarComponent,
+    GalleryViewDirectoryDialog
   ],
   imports: [
     BrowserModule,
@@ -26,9 +31,14 @@ import { GalleryToolbarComponent } from './gallery-view/gallery-toolbar/gallery-
     MatButtonModule,
     MatIconModule,
     NgxElectronModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [GalleryViewDirectoryDialog]
 })
 export class AppModule { }

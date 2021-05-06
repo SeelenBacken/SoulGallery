@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Create new Album</h1>
+<mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Album Title</mat-label>
+    <input matInput [(ngModel)]="newAlbumTitle">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-raised-button (click)="onCancelClick()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="onSaveClick()">Submit</button>
+</mat-dialog-actions>
